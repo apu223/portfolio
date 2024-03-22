@@ -12,10 +12,10 @@ const Service = () => {
   const [issHovered, setIsHoveredd] = useState(false);
   const [isHovereds, setIsHovereds] = useState(false);
   return (
-    <div id="Services" className="">
-      <div className="items-center justify-center mt-24 lg:mt-44 dark:text-white">
-        <p className="text-center font-serif text-lg">WHAT WE DO</p>
-        <h3 className="text-center font-extrabold text-[26px] mt-3 text-black lg:text-[45px] lg:font-serif dark:text-white">
+    <div id="Services" className="mt-14 mx-2 lg:mx-[140px]">
+      <div className="items-center text-center px-8 sm:mt-32 md:mt-40 justify-center mt-24 lg:mt-44 dark:text-white">
+        <p className="mt-6 max-w-3xl mx-auto text-lg my-4">WHAT WE DO</p>
+        <h3 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
           Services That Help You Grow.
         </h3>
       </div>
@@ -42,10 +42,10 @@ const Service = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             </div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
-              <h1 className="font-dmserif text-3xl font-bold text-white lg:mb-9">
+              <h1 className="max-w-lg mb-6  tracking-tight text-center sm:text-3xl  sm:leading-none text-white dark:text-white text-3xl font-extrabold">
                 Web Designing
               </h1>
-              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+              <p className="-mt-3 max-w-3xl mx-auto text-lg my-4 text-white opacity-0 transition-opacity duration-700 group-hover:opacity-100">
                 Service Icon Web Designing We offer planning and assembling
                 services for you from startups to the final creation or closing
                 creation.
@@ -81,10 +81,10 @@ const Service = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             </div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
-              <h1 className="font-dmserif text-3xl font-bold text-white lg:mb-9">
+              <h1 className="max-w-lg mb-6  tracking-tight text-center sm:text-3xl  sm:leading-none text-white dark:text-white text-3xl font-extrabold">
                 Web Development
               </h1>
-              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+              <p className="-mt-3 max-w-3xl mx-auto text-lg my-4 text-white opacity-0 transition-opacity duration-700 group-hover:opacity-100">
                 Service Icon Web Designing We offer planning and assembling
                 services for you from startups to the final creation or closing
                 creation.
@@ -120,10 +120,10 @@ const Service = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             </div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
-              <h1 className="font-dmserif text-3xl font-bold text-white lg:mb-9">
-                Web Application
+              <h1 className="max-w-lg mb-6  tracking-tight text-center sm:text-3xl  sm:leading-none text-white dark:text-white text-3xl font-extrabold">
+                Web APP
               </h1>
-              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+              <p className="-mt-3 max-w-3xl mx-auto text-lg my-4 text-white opacity-0 transition-opacity duration-700 group-hover:opacity-100">
                 Service Icon Web Designing We offer planning and assembling
                 services for you from startups to the final creation or closing
                 creation.

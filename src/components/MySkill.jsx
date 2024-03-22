@@ -11,19 +11,19 @@ const MySkill = () => {
   // Create refs for each image
 
   return (
-    <div className="lg:mt-48">
-      <div className="mx-3 justify-center items-center dark:bg-gray-900 my-16">
+    <div className="">
+      <div className="mx-1 justify-center items-center dark:bg-gray-900 my-16 text-start px-8 mt-20 sm:mt-32 md:mt-40">
         <div
-          className="text-[34px] text-center font-bold text-sky-400 mx-10 ease-in-out duration-900 hover:shadow-indigo-300"
+          className="text-[34px] text-center font-bold text-black dark:text-gray-200 mx-0 ease-in-out duration-900 hover:shadow-indigo-300"
           data-aos="zoom-in"
         >
-          <h1 className="lg:text-[45px] lg:font-serif">My Skills</h1>
-          <p className="text-[13px] text-center font-thin mt-4 text-black dark:text-violet-400">
+          <h1 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">My <span className="text-blue-500">Skills</span></h1>
+          <p className="mt-6 max-w-3xl mx-auto text-lg font-thin">
             We put your ideas and thus your wishes in the form of a unique web
             project that inspires you and your customers.
           </p>
         </div>
-        <div className=" grid-cols-1 mx-8 lg:grid-cols-6 gap-8 hidden mt-11 lg:my-20">
+        <div className=" grid-cols-1 mx-2 lg:grid-cols-6 gap-8 hidden mt-11 lg:my-20">
           <div
             className="flex flex-col items-center justify-center border border-gray-400 p-4 rounded hover:shadow-blue-500  hover:ease-in-out"
             data-aos="fade-right"

@@ -5,6 +5,16 @@ import hero from "../img/hero.png";
 import Autowriting from "./Autowriting";
 
 const Hero = () => {
+  const scrollTo = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const marginTop = 150;
+      const scrollToY =
+        element.getBoundingClientRect().top + window.scrollY - marginTop;
+      window.scrollTo({ top: scrollToY, behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -14,30 +24,31 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="Home" className="mt-14 lg:mx-72">
+    <div id="Home" className="mt-14 mx-10 lg:mx-72">
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-0">
         <div className="flex flex-col justify-center">
-          <div className="bg-gray-50 dark:bg-gray-900 dark:text-white flex flex-col items-center lg:items-start lg:gap-y-4">
+          <div className="max-w-lg mb-6  tracking-tight text-center sm:text-3xl  sm:leading-none text-black dark:text-white text-3xl font-extrabold">
             <h2
-              className="font-bold text-[27px] lg:text-4xl lg:text-left"
+              className="text-gradient my-4 lg:text-3xl lg:text-left"
               data-aos="fade-down"
             >
-              Hello, It's <span className="text-violet-300">Me</span>
+              Hello, It's{" "}
+              <span className="text-violet-300 text-gradient">Me</span>
             </h2>
-            <h1
-              className="font-extrabold mt-2 text-[35px] text-center lg:text-5xl lg:text-left lg:mt-0"
-              data-aos="fade-right"
+            <h2
+              className="text-gradient my-4 lg:text-3xl lg:text-left"
+              data-aos="fade-down"
             >
-              APU <span className="text-violet-500">SIKDER</span>
-            </h1>
-            <p
-              className="font-extrabold mt-4 text-[25px] text-center lg:text-2xl lg:text-left lg:mt-0 flex flex-1"
-              
-            >
-              And I'M A- {" "}
-              <span className="text-blue-600"> <Autowriting/></span>
+              APU
+              <span className="text-blue-500 text-gradient"> Sikder</span>
+            </h2>
+            <p className="flex text-[22px] sm:text-3xl lg:items-center justify-center lg:text-center lg:justify-start max-w-xl md:mx-auto sm:text-center lg:max-w-2xl place-items-center">
+              And I'M A-{" "}
+              <span className="text-blue-600">
+                {" "}
+                <Autowriting />
+              </span>
             </p>
-            
           </div>
         </div>
         <div
@@ -50,9 +61,12 @@ const Hero = () => {
             alt="hero"
           />
         </div>
-        <div className=" text-sm font-light mx-10 text-black dark:text-slate-100 mt-16 text-center lg:text-xl lg:-mt-32 lg:-ml-9" data-aos="fade-up">
-          I break down complex user experinece problems to create integritiy
-          focussed solutions that connect billions zdfgfgfdgdfof people
+        <div
+          className=" max-w-3xl mx-auto text-lg my-4 font-light text-black text-center dark:text-slate-100 mt-16 lg:text-xl lg:-mt-32 lg:ml-0 lg:justify-start lg:items-start"
+          data-aos="fade-up"
+        >
+          I break down complex user experience problems to create
+          integrity-focused solutions that connect billions of people
         </div>
       </div>
     </div>

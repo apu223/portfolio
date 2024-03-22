@@ -77,7 +77,7 @@ const Navbar = () => {
           : ""
       } w-full bg-gray-5  dark:bg-gray-900 dark:text-white lg:h-[75px] h-[65px] sticky top-0  z-20`}
     >
-      <div className="flex mx-2 justify-between items-center -mt-10 lg:mx-72 lg:-my-20">
+      <div className="flex mx-8 justify-between items-center -mt-10 lg:mx-[250px] lg:-my-20">
         {/* Logo and site name */}
         <div
           className="items-center justify-center text-center flex -mt-1"
@@ -99,7 +99,7 @@ const Navbar = () => {
         {/* Navigation links */}
         <div className="hidden lg:block items-center justify-center">
           <div className="flex gap-x-8 items-center">
-            <ul className="flex gap-x-10 text-xl font-medium">
+            <ul className="flex gap-x-10 text-sky-500 hover:text-sky-600  text-[18px] px-6 font-Poppins font-[400]">
               {navbar.map(({ id, name, link }) => (
                 <li
                   key={id}

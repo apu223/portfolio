@@ -17,7 +17,7 @@ const Autowriting = () => {
         ]}
         wrapper="span"
         speed={20}
-        className="font-bold text-[25px]"
+        className="max-w-lg  text-[23px] sm:text-3xl md:mx-auto sm:text-center lg:max-w-2xl"
         repeat={Infinity}
       />
     </div>

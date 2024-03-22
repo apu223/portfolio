@@ -3,14 +3,28 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const SocialMedia = () => {
+  const scrollTo = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const marginTop = 150;
+      const scrollToY =
+        element.getBoundingClientRect().top + window.scrollY - marginTop;
+      window.scrollTo({ top: scrollToY, behavior: "smooth" });
+    }
+  };
   return (
-    <div className="my-14 lg:my-20 mx-4 lg:-ml-[410px] lg:mx-10 flex justify-center items-center w-full">
+    <div className="my-14 lg:my-20 mx-4 lg:-ml-[391px] lg:mx-10 flex justify-center items-center w-full">
       <div
         className="flex flex-col items-center lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:-mt-36"
         data-aos="zoom-in"
       >
         <button className="h-[50px] lg:h-[50px] w-full lg:w-[170px] lg:text-lg rounded-full transition-transform border-2 border-blue-700 bg-transparent-600 text-xl text-blue-500 hover:bg-violet-300 duration-500 hover:scale-110">
           <Link to="#download-cv">Download CV</Link>
+        </button>
+        <button className="h-[50px] order-last lg:order-2 lg:h-[50px] w-full lg:w-[170px] lg:text-lg rounded-full transition-transform border-2 border-blue-700 bg-transparent-600 text-xl text-blue-500 hover:bg-violet-300 duration-500 hover:scale-110">
+          <Link to="#Contat" onClick={() => scrollTo("Contact")}>
+            Hire Me
+          </Link>
         </button>
         <div className="flex space-x-4">
           <div
