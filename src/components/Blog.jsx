@@ -57,7 +57,7 @@ const Blog = () => {
           <img
             src="https://htmldemo.net/lendex/lendex/assets/images/blog/blog-feed-img-3.jpg"
             alt="Blog post"
-            className="h-64 w-full object-cover rounded-lg mb-4"
+            className="h-64 w-full object-cover rounded-lg mb-4 "
           />
           <h2 className=" font-semibold mb-2 text-blue-700 text-xl text-center">
             Five Latest Developments In Web Agency

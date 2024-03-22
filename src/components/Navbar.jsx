@@ -77,7 +77,7 @@ const Navbar = () => {
           : ""
       } w-full bg-gray-5  dark:bg-gray-900 dark:text-white lg:h-[75px] h-[65px] sticky top-0  z-20`}
     >
-      <div className="flex mx-8 justify-between items-center -mt-10 lg:mx-[250px] lg:-my-20">
+      <div className="flex mx-4 justify-between items-center -mt-10 lg:mx-[250px] lg:-my-20">
         {/* Logo and site name */}
         <div
           className="items-center justify-center text-center flex -mt-1"
